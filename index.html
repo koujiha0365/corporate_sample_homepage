@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Sample Co.ltd</title>
+  <!-- 自作スタイル -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- GoogleFonts -->
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- ナイススクロールjQuery -->
+  <script src="js/jquery.nicescroll.min.js"></script>
+
+
+  <script>
+
+  // 背景fixed時にIEだとスクロールがガタつくのでナイススクロールを採用
+  if(navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/7\./) || navigator.userAgent.match(/Edge\/12\./)) {
+
+    $(document).ready(
+      function() {
+        $("html").niceScroll();
+      }
+    );
+  }
+
+  //全ての読み込みが完了したら実行
+  $(window).on('load',function () {
+    setTimeout(function(){
+    $('#loader-bg').delay(900).fadeOut(800);
+    $('#loader').delay(600).fadeOut(300);
+    $('.hidden').css('display', 'block');
+  },5000)
+  });
+
+</script>
+
+</head>
+
+
+<body>
+
+
+  <!-- ▼ローディング画像▼ -->
+  <div id="loader-bg">
+    <div id="loader">
+      <!-- <img src="img/loading.svg" width="80" height="80" alt="Now Loading..." /> -->
+      <img src="img/tumblr_n2eccv6Dev1rgpzseo1_1280.gif" width="100" height="100" alt="Now Loading..." />
+      <p style="color: #55acee; font-weight: bold; font-family: serif;">SAMPLE CORPORATION</p>
+      <!-- <p>Now Loading...</p> -->
+    </div>
+  </div>
+  <!-- ▲ローディング画像▲ -->
+
+
+  <!-- トップページの動画 -->
+  <div class="fixed-movie hidden">
+    <div class="fixed-movie-wrapper">
+      <video id="video" src="img/SampleVideo_1280x720_2mb.mp4" autoplay loop muted>
+      </video>
+    </div>
+  </div>
+
+
+  <!-- ヘッダー -->
+  <header class="header hidden">
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="header-left">
+          <p style="font-size: 32px; color: #55acee;">Logo Image</p>
+        </div>
+        <div class="header-right">
+          <ul class="animated slideInRight">
+            <li class="type1 btn"><a href="">取扱メーカー・商品</a></li>
+            <li class="type1 btn"><a href="">環境方針</a></li>
+            <li class="type1 btn"><a href="">会社案内</a></li>
+            <li class="type1 btn"><a href="">採用情報</a></li>
+            <li class="type1 btn"><a href="">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 中央要素 -->
+  <div class="cd-scrolling-bg hidden">
+    <div class="container">
+      <div class="top-contents">
+        <h1 class="animated bounceInUp">Welcome to Sample corporation</h1>
+        <p class="animated bounceInUp">catch copy</p>
+        <p class="animated bounceInUp">catch copy2</p>
+      </div>
+    </div>
+    <div class="whatsnew">
+      NEWS! 2018.xx.xx<button>View All</button></br>
+      誠に勝手ながら終日お休みとさせていただきます。
+    </div>
+
+  </div>
+
+  <section class="cd-fixed-bg bgimage0 hidden">
+
+  </section>
+
+
+  <section class="cd-scrolling-bg50 hidden">
+    <div class="container">
+      <div class="half-wrapper">
+        <h1 class="fadein">ABOUT US</h1>
+        <p class="fadein">Sample Corporationはxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br />
+          Sample Corporationはxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="cd-fixed-bg full-image bgimage1 hidden">
+    <div class="container">
+      <div class="section-header">
+        <h1 class="fadein">COMPANY</h1>
+        <p class="fadein">
+          こんな企業です</br>
+          あんな企業です</br>
+          そんな企業です
+        </p>
+        <div class="details">
+          <div>
+            <p>会社概要</p>
+            <div class="scale">
+              <img src="img/gaiyo.jpeg">
+            </div>
+          </div>
+          <div>
+            <p>沿革</p>
+            <div class="scale">
+              <img src="img/history.jpeg">
+            </div>
+          </div>
+          <div>
+            <p>国内事業所</p>
+            <div class="scale">
+              <img src="img/AdobeStock_34014838_Preview.jpeg">
+            </div>
+          </div>
+        </div>
+        <p class="description">Sample Corporationは社会的責任を果たします</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="cd-fixed-bg full-image bgimage2 hidden">
+    <div class="container">
+      <div class="section-header">
+        <h1 class="fadein">PRODUCT</h1>
+        <p class="fadein">
+          あらゆるニーズに対応します
+        </p>
+        <div class="details">
+          <div>
+            <p>取扱商品</p>
+            <div class="scale">
+            <img src="img/gaiyo.jpeg">
+            </div>
+          </div>
+          <div>
+            <p>製品情報</p>
+            <div class="scale">
+            <img src="img/gaiyo.jpeg">
+            </div>
+          </div>
+          <div>
+            <p>ECサイト</p>
+            <div class="scale">
+              <img src="img/gaiyo.jpeg">
+            </div>
+          </div>
+        </div>
+      <p class="description">Sample Corporationはお客様のニーズにお応えします。</p>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="cd-fixed-bg full-image bgimage3 hidden">
+    <div class="container">
+      <div class="section-header">
+        <h1 class="fadein">100th ANNIVERSARY</h1>
+        <p class="fadein">
+          こんな企業です</br>
+          あんな企業です</br>
+          そんな企業です
+        </p>
+      <div class="details">
+        <div>
+          <p>100周年記念サイト</p>
+          <div class="scale">
+            <img src="img/AdobeStock_101260248_Preview.jpeg">
+          </div>
+        </div>
+      </div>
+      <p class="description">Sample Corporationは100周年を迎えました。</p>
+    </div>
+    </div>
+  </section>
+
+  <section class="cd-scrolling-bg50 hidden">
+    <div class="container">
+      <div class="half-wrapper">
+        <h1 class="fadein">SLOGAN</h1>
+        <p class="fadein">「温故知新」</br>
+          一人一人が挑戦する人材でありたい。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cd-fixed-bg full-image bgimage4 hidden">
+    <div class="container">
+      <div class="section-header">
+        <h1 class="fadein">RECRIT</h1>
+        <p class="fadein">
+          こんな企業です</br>
+          あんな企業です</br>
+          そんな企業です
+        </p>
+        <div class="details">
+          <div>
+            <p>採用特設ページ</p>
+            <div class="scale">
+              <img src="img/gaiyo.jpeg">
+            </div>
+          </div>
+        </div>
+        <p class="description">Sample Corporationは優秀な人材を募集しております。</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="new cd-fixed-bg cd-bg-0 hidden">
+    <div class="container">
+      <div class="new-wrapper">
+
+        <h1 class="animated fadeIn">新着情報</h1>
+        <table class="new-table">
+          <tr>
+            <td>xxxx年xx月xx日</td>
+            <td class="fadein">何卒ご理解の程お願い申し上げます。xxxx年も、変らぬご愛顧を賜りますよう宜しくお願い申し上げます。</td>
+          </tr>
+          <tr>
+            <td>xxxx年xx月xx日</td>
+            <td class="fadein">何卒ご理解の程お願い申し上げます。xxxx年も、変らぬご愛顧を賜りますよう宜しくお願い申し上げます。</td>
+          </tr>
+          <tr>
+            <td>xxxx年xx月xx日</td>
+            <td class="fadein">何卒ご理解の程お願い申し上げます。xxxx年も、変らぬご愛顧を賜りますよう宜しくお願い申し上げます。</td>
+          </tr>
+          <tr>
+            <td>xxxx年xx月xx日</td>
+            <td class="fadein">何卒ご理解の程お願い申し上げます。xxxx年も、変らぬご愛顧を賜りますよう宜しくお願い申し上げます。</td>
+          </tr>
+
+        </table>
+        <a class="new-btn" href="">新着情報一覧</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 空要素 -->
+  <section class="cd-scrolling-bg hidden">
+    <div class="container">
+      <p></p>
+    </div>
+  </section>
+
+  <footer class="hidden">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-left">
+          <!-- <img src="img/ロゴ補正.png" alt=""> -->
+          <p style="font-size: 24px; color: #55acee;">Logo Image</p>
+          <h3>xxxxxxxx総合商社　Sample Corporation</h3>
+          <p>〒xxx-xxxx</p>
+          <p>東京都xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-column">
+            <a href=""><h3>取り扱いメーカー・商品</h3></a>
+            <a href=""><p>取り扱い商品</p></a>
+            <a href=""><p>取り扱いメーカー</p></a>
+            <a href=""><p>製品情報など</p></a>
+          </div>
+          <div class="footer-right-column">
+            <a href=""><h3>環境方針</h3></a>
+            <a href=""><p>社長メッセージ</p></a>
+            <a href=""><p>組織表</p></a>
+            <a href=""><p>事業体制</p></a>
+          </div>
+          <div class="footer-right-column">
+            <a href=""><h3>会社案内</h3></a>
+            <a href=""><p>会社概要</p></a>
+            <a href=""><p>会社沿革</p></a>
+            <a href=""><p>国内事業所</p></a>
+          </div>
+          <div class="footer-right-column">
+            <a href=""><h3>お問い合わせ</h3></a>
+            <a href=""><p>個人情報保護方針</p></a>
+            <a href=""><p>採用情報</p></a>
+            <a href=""><p>資料請求</p></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <p class="hidden">Copyright &copy; 2019 SAMPLE Co.Ltd All Right Reserved.</p>
+
+  </footer>
+
+  <a id="top" href="#" class="back-to-top"></a>
+
+
+
+
+  <script>
+
+  "use strict";
+
+  // コントロールを非表示
+  var movie = document.getElementById('video');
+  movie.controls = false;
+
+  // backtotopボタン
+  $(document).ready(function(){
+    $(window).scroll(function() {
+      if($(this).scrollTop() > 100) { // 100pxスクロールしていたら上に戻るボタンを表示
+        $(".back-to-top").fadeIn();
+        $("header").addClass('header-scroll');
+        $(".header-wrapper").addClass('header-wrapper-padding');
+      } else {
+        $(".back-to-top").fadeOut();
+        $("header").removeClass('header-scroll');
+        $(".header-wrapper").removeClass('header-wrapper-padding');
+      }
+    });
+    $(".back-to-top").click(function() {
+      $("body,html").animate({scrollTop:0},800); // 800msかけて上に戻る
+    });
+  });
+
+  // backtotopボタンのアニメーション
+  $('#top').on('mouseenter',function(){
+    var pos = $(this).position();
+    $(this).animate({'right':pos.left+5+'px','top':pos.top+5+'px'},1000);
+  });
+
+
+  $(function(){
+    $(window).scroll(function (){
+      $('.fadein').each(function(){
+        var targetElement = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > targetElement - windowHeight + 200){
+          $(this).css('opacity','1');
+          $(this).css('transform','translateY(0)');
+        }
+      });
+    });
+  });
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
