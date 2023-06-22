@@ -1,2 +1,2 @@
 # corporate_sample_homepage
-I made full movie and fixed image pages. but not responsive design.
+会社のHPを制作する参考としてパララックスサイトを作りました
